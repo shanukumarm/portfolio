@@ -1,6 +1,7 @@
 import { Download, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import imgProfile from "../../assets/images/profile.png"
 
 export function HeroSection() {
   const scrollToExperience = () => {
@@ -79,7 +80,7 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full blur-2xl opacity-20"></div>
               <div className="relative p-3 rounded-full shadow-2xl">
                 <ImageWithFallback
-                  src="src/assets/images/profile.png"
+                  src={imgProfile}
                   alt="Shanu Kumar - Senior Cloud & Platform Engineer"
                   className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-full"
                 />
