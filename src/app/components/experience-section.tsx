@@ -6,53 +6,49 @@ export function ExperienceSection() {
     {
       title: "Lead Engineer – Cloud Platform",
       company: "Verisk Analytics",
-      period: "2023 - Present",
+      period: "Apr 2024 - Present",
       icon: Building2,
       color: "blue",
       achievements: [
         {
-          text: "Architected and executed Kubernetes Gateway API migration across multi-cluster infrastructure",
+          text: "Designed reusable Terraform modules and Kubernetes templates, reducing environment provisioning time by 90%",
           icon: Zap,
         },
         {
-          text: "Built enterprise CI/CD execution platform on EKS, achieving 30% cost reduction and 80% faster pod startup times",
+          text: "Architected service mesh migration from Istio sidecar to ambient mode, reducing resource consumption by 25%",
           icon: TrendingUp,
         },
         {
-          text: "Developed Terraform-based automation frameworks for standardized infrastructure provisioning",
+          text: "Built scalable CI/CD execution platform on EKS with self-hosted runners, cutting CI infrastructure costs by 30%",
+          icon: TrendingUp,
+        },
+        {
+          text: "Led migration from Kubernetes Ingress to Gateway API, enabling scalable routing policies across 100+ microservices",
+          icon: Zap,
+        },
+        {
+          text: "Implemented software supply chain security with DependencyTrack, enabling automated vulnerability scanning across 50+ services",
           icon: Award,
-        },
-        {
-          text: "Led zero-downtime migration to Istio ambient mesh architecture, improving performance and reducing resource overhead",
-          icon: Zap,
-        },
-        {
-          text: "Created platform abstraction libraries reducing provisioning time by 90%, enabling self-service infrastructure",
-          icon: TrendingUp,
         },
       ],
     },
     {
       title: "Technical Lead – Cloud & DevOps",
       company: "HCL Technologies",
-      period: "2022 - 2023",
+      period: "Oct 2022 - Mar 2024",
       icon: Building2,
       color: "purple",
       achievements: [
         {
-          text: "Designed and implemented multi-account AWS architecture with comprehensive governance framework",
-          icon: Award,
-        },
-        {
-          text: "Built automated CI/CD pipelines reducing release cycle time by 50%+ through GitOps practices",
+          text: "Designed and implemented cloud-agnostic CI/CD pipelines across Kubernetes and AWS, reducing release cycle time by 50%",
           icon: TrendingUp,
         },
         {
-          text: "Owned complete EKS lifecycle management including cluster upgrades, scaling, and security hardening",
+          text: "Owned EKS lifecycle management including version upgrades, add-on compatibility, autoscaling, and cluster observability",
           icon: Zap,
         },
         {
-          text: "Implemented GitOps-driven Kubernetes deployments with ArgoCD for declarative infrastructure management",
+          text: "Built reusable Helm and Terraform modules, standardizing infrastructure provisioning across microservice deployments",
           icon: Award,
         },
       ],
@@ -60,25 +56,21 @@ export function ExperienceSection() {
     {
       title: "Senior Software Engineer",
       company: "HCL Technologies",
-      period: "2020 - 2022",
+      period: "Aug 2021 - Oct 2022",
       icon: Building2,
       color: "green",
       achievements: [
         {
-          text: "Delivered IaC-driven cloud provisioning solutions using Terraform and CloudFormation at scale",
+          text: "Standardized Kubernetes microservice deployments using Helm and GitOps workflows with ArgoCD, improving consistency across 50+ services",
+          icon: Award,
+        },
+        {
+          text: "Automated AWS infrastructure provisioning using Terraform and CloudFormation, accelerating environment setup across dev and production",
           icon: Zap,
         },
         {
-          text: "Designed and implemented blue-green and canary deployment strategies for zero-downtime releases",
+          text: "Implemented blue-green and canary deployment strategies, enabling zero-downtime releases and reducing production risk",
           icon: TrendingUp,
-        },
-        {
-          text: "Built and operated stateful distributed systems on Kubernetes with focus on data persistence and reliability",
-          icon: Award,
-        },
-        {
-          text: "Mentored junior engineers on cloud-native best practices and infrastructure automation",
-          icon: Award,
         },
       ],
     },

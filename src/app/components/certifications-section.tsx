@@ -26,6 +26,13 @@ export function CertificationsSection() {
       verified: true,
     },
     {
+      title: "AWS Certified AI Practitioner",
+      abbr: "AWS AI Practitioner",
+      issuer: "Amazon Web Services",
+      color: "orange",
+      verified: true,
+    },
+    {
       title: "AWS Certified Cloud Practitioner",
       abbr: "AWS CCP",
       issuer: "Amazon Web Services",
@@ -69,7 +76,7 @@ export function CertificationsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {certifications.map((cert, index) => {
             const colors =
               colorClasses[cert.color as keyof typeof colorClasses];
@@ -77,7 +84,7 @@ export function CertificationsSection() {
             return (
               <Card
                 key={index}
-                className={`p-8 hover:shadow-xl transition-all duration-300 border-2 ${colors.border} bg-white group hover:scale-105`}
+                className={`p-8 hover:shadow-xl transition-all duration-300 border-2 ${colors.border} bg-white group hover:scale-105 w-full md:w-[calc(33.333%-16px)]`}
               >
                 <div className="flex items-start gap-4">
                   <div

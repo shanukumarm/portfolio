@@ -18,7 +18,7 @@ export function Footer() {
         <div className="text-center space-y-4">
           <div>
             <h3 className="text-2xl font-bold mb-1">Shanu Kumar</h3>
-            <p className="text-gray-400">Senior Cloud & Platform Engineer</p>
+            <p className="text-gray-400">Lead Engineer</p>
           </div>
 
           <p className="text-gray-400 text-sm max-w-2xl mx-auto">

@@ -111,17 +111,27 @@ export function ContactSection() {
                 <Button
                   size="lg"
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg rounded-xl shadow-lg"
+                  asChild
                 >
-                  <Send className="mr-2 h-5 w-5" />
-                  Send a Message
+                  <a href="mailto:shanukumarm@gmail.com">
+                    <Send className="mr-2 h-5 w-5" />
+                    Send a Message
+                  </a>
                 </Button>
 
                 <Button
                   size="lg"
                   variant="outline"
                   className="w-full border-2 border-gray-300 hover:border-gray-400 py-6 text-lg rounded-xl"
+                  asChild
                 >
-                  Schedule a Call
+                  <a
+                    href="https://www.linkedin.com/in/shanukumarm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Schedule a Call
+                  </a>
                 </Button>
               </div>
             </div>

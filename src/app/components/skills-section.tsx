@@ -23,9 +23,9 @@ export function SkillsSection() {
       skills: [
         "Kubernetes",
         "Docker",
-        "Istio (Sidecar & Ambient)",
         "Helm",
         "KEDA",
+        "Istio (Sidecar & Ambient)",
         "Karpenter",
       ],
     },
@@ -34,8 +34,9 @@ export function SkillsSection() {
       icon: GitBranch,
       color: "green",
       skills: [
-        "GitHub Actions",
         "Azure DevOps",
+        "GitLab CI",
+        "GitHub Actions",
         "Jenkins",
         "ArgoCD",
         "GitOps Workflows",
@@ -49,6 +50,7 @@ export function SkillsSection() {
       skills: [
         "Prometheus",
         "Grafana",
+        "Loki",
         "Datadog",
         "Trivy",
         "DependencyTrack",
@@ -61,11 +63,10 @@ export function SkillsSection() {
       icon: Code,
       color: "orange",
       skills: [
-        "Python", 
-        "TypeScript", 
-        "Bash", 
-        "Go", 
-        "Infrastructure as Code"
+        "Python",
+        "TypeScript",
+        "Bash",
+        "Infrastructure as Code",
       ],
     },
   ];
@@ -112,7 +113,7 @@ export function SkillsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-fit mx-auto justify-items-center">
+        <div className="flex flex-wrap justify-center gap-6">
           {skillCategories.map((category, index) => {
             const Icon = category.icon;
             const colors =
@@ -121,7 +122,7 @@ export function SkillsSection() {
             return (
               <Card
                 key={index}
-                className={`p-6 hover:shadow-xl transition-all duration-300 border-2 ${colors.border} hover:scale-105`}
+                className={`p-6 hover:shadow-xl transition-all duration-300 border-2 ${colors.border} hover:scale-105 w-full md:w-[calc(33.333%-16px)]`}
               >
                 <div className="flex items-center gap-3 mb-6">
                   <div

@@ -2,6 +2,7 @@ import { Download, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import imgProfile from "../../assets/images/profile.png"
+import resumePdf from "../../assets/resume/shanu_resume.pdf"
 
 export function HeroSection() {
   const scrollToExperience = () => {
@@ -21,7 +22,7 @@ export function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="inline-block px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">
-                Senior Cloud & Platform Engineer
+                Lead Engineer
               </div>
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
@@ -67,9 +68,15 @@ export function HeroSection() {
                 size="lg"
                 variant="outline"
                 className="border-2 border-gray-300 hover:border-gray-400 px-8 py-6 text-lg rounded-xl"
+                asChild
               >
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
+                <a
+                  href={resumePdf}
+                  download="shanu_resume.pdf"
+                >
+                  <Download className="mr-2 h-5 w-5" />
+                  Download Resume
+                </a>
               </Button>
             </div>
           </div>
@@ -84,12 +91,12 @@ export function HeroSection() {
                   alt="Shanu Kumar - Senior Cloud & Platform Engineer"
                   className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-full"
                 />
-                <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                  <p className="text-sm font-medium text-gray-600">
-                    Profile Image
+                <div className="absolute bottom-0 left-3 right-3 bg-white/95 backdrop-blur-sm px-6 py-4 rounded-xl shadow-lg text-center">
+                  <p className="text-base font-semibold text-gray-700">
+                    Lead Engineer
                   </p>
-                  <p className="text-xs text-gray-500 mt-1">
-                    4+ years of experience
+                  <p className="text-sm text-gray-500 mt-1">
+                    Verisk Analytics
                   </p>
                 </div>
               </div>
