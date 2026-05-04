@@ -22,7 +22,7 @@ export function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="inline-block px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">
-                Lead Engineer
+                Lead Engineer · Platform Engineering
               </div>
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
@@ -30,8 +30,8 @@ export function HeroSection() {
               </h1>
 
               <p className="text-2xl md:text-3xl text-gray-600 font-medium leading-relaxed">
-                Building scalable cloud platforms, CI/CD systems, and
-                Kubernetes-native infrastructure
+                Building Internal Developer Platforms, Kubernetes infrastructure,
+                and Terraform-driven cloud automation at scale
               </p>
             </div>
 
@@ -39,19 +39,18 @@ export function HeroSection() {
               <div className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2.5"></div>
                 <p>
-                  AWS & Kubernetes expertise powering enterprise-grade systems
+                  Internal Developer Platform enabling 20+ engineering teams with self-service infrastructure and standardized delivery pipelines
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2.5"></div>
                 <p>
-                  Infrastructure as Code & GitOps for automated, reliable
-                  deployments
+                  Terraform-based AWS provisioning &amp; GitOps across 20+ EKS clusters
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2.5"></div>
-                <p>Reliability, scalability, and cost optimization at scale</p>
+                <p>90% faster provisioning · 50% faster releases · 40% cost reduction</p>
               </div>
             </div>
 

@@ -18,9 +18,9 @@ export function AchievementsSection() {
       color: "blue",
     },
     {
-      title: "AWS Game Day Winner",
+      title: "AWS GameDay – 2nd Runner-up",
       description:
-        "Top performer in AWS Game Day competition, demonstrating expertise in architecting resilient cloud solutions under pressure",
+        "Placed 2nd runner-up in AWS Game Day competition, demonstrating expertise in architecting resilient cloud solutions under pressure",
       icon: Target,
       color: "orange",
     },

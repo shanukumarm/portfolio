@@ -5,15 +5,18 @@ import { Badge } from "./ui/badge";
 export function SkillsSection() {
   const skillCategories = [
     {
-      title: "Cloud & Infrastructure",
+      title: "Infrastructure & Cloud",
       icon: Cloud,
       color: "blue",
       skills: [
-        "AWS (EKS, VPC, IAM, RDS, S3, CloudFront)",
         "Terraform",
         "CDKTF",
         "CloudFormation",
-        "Multi-cloud Architecture",
+        "AWS EKS",
+        "AWS EC2 / RDS / S3",
+        "AWS Lambda / DynamoDB",
+        "AWS SNS/SQS / Bedrock",
+        "VPC / IAM / Route 53 / CloudFront",
       ],
     },
     {
@@ -25,8 +28,10 @@ export function SkillsSection() {
         "Docker",
         "Helm",
         "KEDA",
-        "Istio (Sidecar & Ambient)",
         "Karpenter",
+        "Istio (Sidecar & Ambient)",
+        "Harbor",
+        "Rancher",
       ],
     },
     {
@@ -35,8 +40,8 @@ export function SkillsSection() {
       color: "green",
       skills: [
         "Azure DevOps",
-        "GitLab CI",
         "GitHub Actions",
+        "GitLab CI",
         "Jenkins",
         "ArgoCD",
         "GitOps Workflows",
@@ -48,25 +53,29 @@ export function SkillsSection() {
       icon: Shield,
       color: "red",
       skills: [
+        "Datadog",
         "Prometheus",
         "Grafana",
         "Loki",
-        "Datadog",
         "Trivy",
         "DependencyTrack",
+        "SonarQube",
+        "Okta IAM",
+        "Kong API Gateway",
         "RBAC",
         "Network Policies",
+        "Secrets Management",
       ],
     },
     {
-      title: "Programming",
+      title: "Backend & APIs",
       icon: Code,
       color: "orange",
       skills: [
-        "Python",
         "TypeScript",
+        "Python (FastAPI, boto3)",
         "Bash",
-        "Infrastructure as Code",
+        "PowerShell",
       ],
     },
   ];

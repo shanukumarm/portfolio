@@ -57,19 +57,19 @@ export function AboutSection() {
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             With{" "}
             <span className="font-bold text-blue-600">
-              4+ years of experience
+              5 years of experience
             </span>{" "}
-            building cloud-native, production-grade systems, I bring a deep
+            building and operating Internal Developer Platforms, Kubernetes infrastructure, and Terraform-driven cloud automation, I bring a deep
             understanding of the entire platform lifecycle—from initial
             architecture to day-2 operations.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             I take strong ownership of{" "}
             <span className="font-semibold">
-              platform architecture and infrastructure
+              platform architecture and Internal Developer Platform (IDP) delivery
             </span>
-            , leading critical migrations, mentoring engineering teams, and
-            consistently driving cost optimization initiatives that deliver
+            , leading Kubernetes platform migrations, mentoring engineering teams, and
+            consistently driving infrastructure cost optimization that delivers
             measurable impact.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
