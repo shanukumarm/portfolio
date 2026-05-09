@@ -55,27 +55,13 @@ export function AboutSection() {
 
         <Card className="p-10 border-0 bg-gradient-to-br from-blue-50 to-purple-50">
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            With{" "}
-            <span className="font-bold text-blue-600">
-              5 years of experience
-            </span>{" "}
-            building and operating Internal Developer Platforms, Kubernetes infrastructure, and Terraform-driven cloud automation, I bring a deep
-            understanding of the entire platform lifecycle—from initial
-            architecture to day-2 operations.
+            Platform Engineering Lead with <span className="font-bold text-blue-600">5 years building Internal Developer Platforms</span> on AWS and Kubernetes, focused on self-service infrastructure, developer experience, and platform reliability.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            I take strong ownership of{" "}
-            <span className="font-semibold">
-              platform architecture and Internal Developer Platform (IDP) delivery
-            </span>
-            , leading Kubernetes platform migrations, mentoring engineering teams, and
-            consistently driving infrastructure cost optimization that delivers
-            measurable impact.
+            I take strong ownership of <span className="font-semibold">platform architecture and IDP delivery</span>, from greenfield Kubernetes adoption and multi-account AWS design to service mesh migrations and AI-assisted platform tooling, with a consistent focus on measurable outcomes over activity.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            My approach combines technical depth with pragmatic
-            engineering—balancing innovation with stability, speed with
-            reliability, and complexity with maintainability.
+            Designed and scaled IDP infrastructure for 20+ engineering teams using CDKTF construct libraries, Istio ambient mesh, and KEDA-driven CI runner fleets, achieving <span className="font-semibold text-blue-600">90% provisioning effort reduction</span>, <span className="font-semibold text-blue-600">25% mesh overhead reduction</span>, and <span className="font-semibold text-blue-600">30% CI cost reduction</span>.
           </p>
         </Card>
       </div>

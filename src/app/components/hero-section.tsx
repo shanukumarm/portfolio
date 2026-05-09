@@ -45,12 +45,12 @@ export function HeroSection() {
               <div className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2.5"></div>
                 <p>
-                  Terraform-based AWS provisioning &amp; GitOps across 20+ EKS clusters
+                  Terraform CDK construct libraries, Istio ambient mesh, and KEDA-driven CI runners across 20+ EKS clusters
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2.5"></div>
-                <p>90% faster provisioning · 50% faster releases · 40% cost reduction</p>
+                <p>90% faster provisioning · 50% faster releases · 30% CI cost reduction</p>
               </div>
             </div>
 
@@ -87,7 +87,7 @@ export function HeroSection() {
               <div className="relative p-3 rounded-full shadow-2xl">
                 <ImageWithFallback
                   src={imgProfile}
-                  alt="Shanu Kumar - Senior Cloud & Platform Engineer"
+                  alt="Shanu Kumar - Platform Engineering Lead"
                   className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-full"
                 />
                 <div className="absolute bottom-0 left-3 right-3 bg-white/95 backdrop-blur-sm px-6 py-4 rounded-xl shadow-lg text-center">

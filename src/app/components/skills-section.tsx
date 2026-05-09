@@ -68,7 +68,7 @@ export function SkillsSection() {
       ],
     },
     {
-      title: "Backend & APIs",
+      title: "Scripting & Automation",
       icon: Code,
       color: "orange",
       skills: [

@@ -59,7 +59,7 @@ export function Header() {
             </div>
             <div className="hidden md:block">
               <p className="font-bold text-gray-900">Shanu Kumar</p>
-              <p className="text-xs text-gray-600">Cloud & Platform Engineer</p>
+              <p className="text-xs text-gray-600">Platform Engineering | AWS & Kubernetes</p>
             </div>
           </button>
 

@@ -4,52 +4,62 @@ import { Building2, TrendingUp, Zap, Award } from "lucide-react";
 export function ExperienceSection() {
   const experiences = [
     {
-      title: "Lead Engineer – Cloud Platform",
+      title: "Lead Engineer",
       company: "Verisk Analytics",
       period: "Apr 2024 - Present",
+      promoted: null,
       icon: Building2,
       color: "blue",
       achievements: [
         {
-          text: "Designed reusable Terraform modules and Kubernetes templates, reducing environment provisioning time by 90%",
+          text: "Standardised infrastructure onboarding for 20+ teams across 500+ daily pipeline runs by architecting a per-team isolated AWS account model with automated bootstrapping and language-specific CI/CD templates.",
+          icon: Building2,
+        },
+        {
+          text: "Reduced provisioning effort by 90% with CDKTF TypeScript constructs using a main-service + supporting-services pattern; a pre-flight registration check enforces mandatory billing tags, preventing configuration drift across the platform.",
           icon: Zap,
         },
         {
-          text: "Architected service mesh migration from Istio sidecar to ambient mode, reducing resource consumption by 25%",
+          text: "Reduced service mesh resource consumption by 25% with zero downtime by migrating Istio sidecar to ambient mode across 20+ EKS clusters; migrated 100+ services from Istio Ingress to Kubernetes Gateway API, separating infrastructure and application routing ownership.",
           icon: TrendingUp,
         },
         {
-          text: "Built scalable CI/CD execution platform on EKS with self-hosted runners, cutting CI infrastructure costs by 30%",
+          text: "Reduced CI costs by 30% by replacing Azure-hosted agents with self-hosted EKS runners scaled by KEDA and Karpenter; integrated DependencyTrack for supply chain vulnerability scanning across 100+ services.",
           icon: TrendingUp,
         },
         {
-          text: "Led migration from Kubernetes Ingress to Gateway API, enabling scalable routing policies across 100+ microservices",
+          text: "Built an internal RAG assistant on AWS Bedrock for natural-language access to platform documentation for 20+ teams; secured with Okta JWT, Kong API Gateway rate limiting, and Bedrock Guardrails.",
           icon: Zap,
         },
         {
-          text: "Implemented software supply chain security with DependencyTrack, enabling automated vulnerability scanning across 50+ services",
-          icon: Award,
+          text: "Led platform incident response through on-call runbooks, SLO/error-budget frameworks, and a multi-agent autonomous remediation system built on AWS Step Functions and Bedrock.",
+          icon: TrendingUp,
         },
       ],
     },
     {
-      title: "Technical Lead – Cloud & DevOps",
+      title: "Technical Lead",
       company: "HCL Technologies",
       period: "Oct 2022 - Mar 2024",
+      promoted: "Promoted from Senior Software Engineer",
       icon: Building2,
       color: "purple",
       achievements: [
         {
-          text: "Designed and implemented cloud-agnostic CI/CD pipelines across Kubernetes and AWS, reducing release cycle time by 50%",
+          text: "Reduced infrastructure configuration effort by 85% by building a multi-tenant EKS platform for 30+ teams with namespace isolation, per-team Karpenter node pools, and reusable Terraform and Helm templates.",
           icon: TrendingUp,
         },
         {
-          text: "Owned EKS lifecycle management including version upgrades, add-on compatibility, autoscaling, and cluster observability",
-          icon: Zap,
+          text: "Eliminated manual routing changes on new team onboarding by redesigning Transit Gateway from flat hub-and-spoke to a hierarchical model using RFC 6598 supernets, scaling to 30+ teams without CIDR exhaustion or on-prem address conflicts.",
+          icon: Building2,
         },
         {
-          text: "Built reusable Helm and Terraform modules, standardizing infrastructure provisioning across microservice deployments",
-          icon: Award,
+          text: "Cut release cycle time by 50% for 10+ directly supported teams by delivering a shared CI/CD pipeline with SBOM generation, container scanning, and ArgoCD GitOps; reduced time-to-production for every new team onboarded.",
+          icon: TrendingUp,
+        },
+        {
+          text: "Reduced shared AWS account costs by 60% by enforcing least-privilege IAM with mandatory tagging policies and automating resource cleanup via EventBridge-triggered Lambda jobs; governed 20+ engineers with zero untagged resource drift.",
+          icon: TrendingUp,
         },
       ],
     },
@@ -57,20 +67,21 @@ export function ExperienceSection() {
       title: "Senior Software Engineer",
       company: "HCL Technologies",
       period: "Aug 2021 - Oct 2022",
+      promoted: null,
       icon: Building2,
       color: "green",
       achievements: [
         {
-          text: "Standardized Kubernetes microservice deployments using Helm and GitOps workflows with ArgoCD, improving consistency across 50+ services",
-          icon: Award,
-        },
-        {
-          text: "Automated AWS infrastructure provisioning using Terraform and CloudFormation, accelerating environment setup across dev and production",
+          text: "Cut Kubernetes onboarding time from 2–3 days to 4 hours for 10+ teams by building a reusable Helm chart library covering the full application deployment lifecycle.",
           icon: Zap,
         },
         {
-          text: "Implemented blue-green and canary deployment strategies, enabling zero-downtime releases and reducing production risk",
+          text: "Standardised safe delivery across 50+ services by introducing blue-green and canary deployment strategies with ArgoCD GitOps, eliminating manual release steps.",
           icon: TrendingUp,
+        },
+        {
+          text: "Established the org's Terraform module library, remote state foundation, and GitLab CI plan/approval gate from scratch; adopted as the infrastructure delivery standard across all teams.",
+          icon: Award,
         },
       ],
     },
@@ -149,6 +160,11 @@ export function ExperienceSection() {
                             <p className="text-sm text-gray-500 mt-1">
                               {exp.period}
                             </p>
+                            {exp.promoted && (
+                              <p className="text-sm text-green-700 font-medium mt-1 italic">
+                                ↑ {exp.promoted}
+                              </p>
+                            )}
                           </div>
                         </div>
 

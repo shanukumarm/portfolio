@@ -12,8 +12,8 @@ export function ContactSection() {
           </h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Open to exciting opportunities in cloud platform engineering, DevOps
-            leadership, and technical architecture roles
+            Open to exciting opportunities in cloud platform engineering,
+            platform engineering leadership, and technical architecture roles
           </p>
         </div>
 
@@ -88,7 +88,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Location</p>
-                    <p className="text-gray-900 font-medium">India</p>
+                    <p className="text-gray-900 font-medium">Hyderabad, India</p>
                   </div>
                 </div>
               </div>
