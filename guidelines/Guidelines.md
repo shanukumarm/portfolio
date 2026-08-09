@@ -6,13 +6,14 @@ Guidelines for maintaining, updating, and scaling Shanu Kumar's portfolio websit
 
 1. **Production-Grade Data & Metrics**: All experience bullet points, project descriptions, skills, and metrics must accurately reflect Shanu's resume and active platform projects.
 2. **Type Safety**: Maintain strict TypeScript interfaces across all components (`projects-section.tsx`, `experience-section.tsx`, `skills-section.tsx`). Avoid `any` types.
-3. **Clean Architecture**: Keep UI components modular, responsive, and styled using Tailwind CSS and predefined design system primitives in `src/app/components/ui`.
+3. **Clean Architecture**: Keep UI components modular, responsive, and styled using Tailwind CSS and predefined design system primitives in `src/app/components/ui/`.
+4. **Custom SVG Icon Component Primitives**: Use `src/app/components/ui/icons.tsx` for brand icons (GitHub, LinkedIn) to avoid deprecation warnings from third-party packages.
 
 ## 🎨 Design System Guidelines
 
-- **Typography**: Clear hierarchy using bold headers and subtle slate/gray body text.
+- **Typography**: Clear hierarchy using bold headers, clean metadata tags, and subtle slate/gray body text.
 - **Color Scheme**:
   - Primary Accent: Blue (`bg-blue-600`, `text-blue-600`)
-  - Secondary Accents: Purple (`bg-purple-600`), Green (`bg-green-600`), Red/Orange for alerts & highlights.
+  - Secondary Accents: Purple (`bg-purple-600`), Green (`bg-green-600`), Amber/Indigo for credentials & category highlights.
 - **Responsive Layout**: Ensure all sections adapt gracefully across mobile, tablet (`md:` grid breakpoints), and desktop (`lg:`, `xl:`) displays.
-- **Interactivity**: Use subtle scale transitions (`hover:scale-105`), smooth scrolling, and accessible modal dialogs for project details.
+- **Interactivity & Lightbox**: Use subtle scale transitions (`hover:scale-105`), smooth scrolling, interactive modal specifications, and Esc-key fullscreen image lightbox viewers for technical diagrams.
