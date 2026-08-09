@@ -1,0 +1,160 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=0.38in, top=0.3in, bottom=0.3in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\usepackage[english]{babel}
+
+% Modernized Executive Colors
+\definecolor{SectionBlue}{HTML}{1E3A8A} % Executive Navy Blue
+\definecolor{LinkBlue}{HTML}{2563EB}    % Modern Vibrant Blue for Links
+\definecolor{TextDark}{HTML}{0F172A}    % Slate Dark for Body Text
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=TextDark,
+    urlcolor=LinkBlue,
+    pdfpagemode=UseNone,
+    bookmarksopen=true,
+    pdfstartview={FitH},
+}
+
+\input glyphtounicode % converts glyph names to unicode
+\pdfgentounicode=1 % ensures pdfs generated are ats readable
+
+%----------FONT OPTIONS-------------------
+\usepackage[default]{sourcesanspro}
+\urlstyle{same}
+
+%----------MARGIN OPTIONS-----------------
+\pagestyle{fancy}
+\fancyhf{}
+
+\renewcommand{\headrulewidth}{0in}
+\renewcommand{\footrulewidth}{0in}
+\setlength{\footskip}{12pt}
+
+\raggedbottom
+\raggedright
+
+%--------SECTIONING COMMANDS---------
+\titleformat{\section}
+  {\color{SectionBlue}\large\bfseries\uppercase}{}{0pt}{}[\vspace{0.1em}\titlerule\vspace{0.1em}]
+\titlespacing*{\section}{0pt}{3pt}{1pt}
+
+%--------CUSTOM COMMANDS--------------
+\newcommand{\resumeQuadHeading}[4]{
+  \item
+  \textbf{#1} \hfill {#2} \\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\resumeHeadingListStart}{
+  \begin{itemize}[left=0em, label={}, itemsep=2pt, topsep=0pt]
+}
+\newcommand{\resumeHeadingListEnd}{\end{itemize}}
+
+% Bullet list with clean filled circles
+\newcommand{\sectionItemBegin}{
+  \begin{itemize}[left=1.2em, label=\small$\bullet$, itemsep=1pt, parsep=0pt, topsep=0.8pt]
+}
+\newcommand{\sectionItemEnd}{\end{itemize}}
+
+%__________________RESUME____________________
+\begin{document}
+
+%-----------CONTACT DETAILS-----------------------
+\begin{center}
+  {\Huge \textbf{Shanu Kumar}}\\
+  \vspace{1pt}
+  \textbf{\color{SectionBlue}Senior Platform Engineer $|$ Cloud Infrastructure $|$ Site Reliability Engineering} \\
+  \vspace{1.5pt}
+  \href{mailto:shanukumarm@gmail.com}{shanukumarm@gmail.com} $|$
+  \href{tel:+917631340415}{+91-7631340415} $|$
+  Hyderabad, India \\
+  \vspace{1.5pt}
+  \href{https://linkedin.com/in/shanukumarm}{LinkedIn} $|$
+  \href{https://github.com/shanukumarm}{GitHub} $|$
+  \href{https://shanukumarm.github.io/portfolio/}{Portfolio}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------------------
+\section{Summary}
+Senior Platform Engineer with 5+ years of experience designing, scaling, and operating high-availability cloud-native infrastructure, Internal Developer Platforms (IDP), and site reliability solutions on AWS and Kubernetes. Specialist in Infrastructure as Code (OpenTofu, CDKTF), service mesh architecture (Istio Ambient, Gateway API), KEDA autoscaling CI fleets, and AWS Bedrock platform automation. Proven track record of empowering 20+ engineering teams, driving enterprise cloud cost efficiency, and accelerating developer delivery.
+
+%--------------TECHNICAL SKILLS------------------------
+\section{Technical Skills}
+  \sectionItemBegin{}
+    \item \textbf{Cloud Infrastructure \& IaC:} AWS (EKS, EC2, Lambda, IAM, RDS, VPC, Transit Gateway, Route 53, S3), OpenTofu, Terraform, CDKTF, Crossplane
+    \item \textbf{Containers \& Service Mesh:} Kubernetes, Istio Ambient Mesh, Gateway API, NLB / cert-manager, Docker, Helm, KEDA, Karpenter, vCluster
+    \item \textbf{Developer Platform \& CI/CD:} Backstage, ArgoCD, Azure DevOps, GitHub Actions, GitLab CI, Actions Runner Controller (ARC)
+    \item \textbf{Observability \& Security:} OpenTelemetry, Prometheus, Grafana, Loki, Tempo, Datadog, Dependency-Track (SBOM), Okta IAM, Kong API Gateway
+    \item \textbf{Programming Languages:} TypeScript, Python (boto3), Bash, SQL
+    \item \textbf{AI Platforms \& Automation:} AWS Bedrock, RAG Architecture, Model Context Protocol (MCP), Agentic Workflows
+  \sectionItemEnd{}
+
+ %----------------EXPERIENCE----------------------
+\section{Experience}
+  \resumeHeadingListStart{}
+    \resumeQuadHeading{Lead Engineer}{Apr 2024 -- Present}{Verisk Analytics}{Hyderabad, India}
+    \sectionItemBegin{}
+      \item \textbf{Developer Platform Architecture}: Architected an Internal Developer Platform (IDP) for 20+ engineering teams; built a Backstage-integrated Stack Management Platform (TypeScript, DynamoDB, CDKTF) enabling self-service infrastructure, ownership indexing, and Terraform state governance.
+      \item \textbf{CI/CD Infrastructure \& Cost Optimization}: Migrated CI/CD execution from Azure DevOps cloud runners to self-hosted EKS build fleets using KEDA, cutting infrastructure costs by 30\% and achieving 80\% faster runner startup times.
+      \item \textbf{Service Mesh \& Traffic Management}: Led zero-downtime migration of 100+ services from Kubernetes Ingress to Gateway API with Istio Ambient mode and NLB/cert-manager, eliminating per-pod proxy overhead and cutting CPU/memory usage by 25\%.
+      \item \textbf{Infrastructure as Code Governance}: Built modular OpenTofu \& CDKTF blueprints for Amazon RDS and Kubernetes resources, reducing environment provisioning time by 90\% and standardizing cloud deployments.
+      \item \textbf{AI Automation, Security \& Observability}: Engineered an AI runbook assistant (AWS Bedrock RAG, Claude 3.5 Haiku), integrated Dependency-Track for SBOM security, and implemented OpenTelemetry LGTM tracing across Kubernetes \& AWS Lambda.
+    \sectionItemEnd{}
+
+    \resumeQuadHeading{Technical Lead}{Oct 2022 -- Mar 2024}{HCL Technologies}{Pune, India}
+    \sectionItemBegin{}
+      \item \textbf{AWS Multi-Account Architecture}: Architected multi-account AWS topology using Transit Gateway, IAM role federation, and cost governance strategies, reducing cloud infrastructure expenditure by 40\%.
+      \item \textbf{CI/CD \& IaC Standardization}: Designed multi-cloud CI/CD automation pipelines and reusable Helm/RDS Terraform modules, reducing release cycle times by 50\% and configuration overhead by 85\%.
+      \item \textbf{Kubernetes Autoscaling \& Resilience}: Implemented Karpenter and HPA autoscaling policies across multi-tenant EKS clusters, optimizing node utilization and ensuring high availability for core services.
+    \sectionItemEnd{}
+
+    \resumeQuadHeading{Senior Software Engineer}{Aug 2021 -- Oct 2022}{HCL Technologies}{Pune, India}
+    \sectionItemBegin{}
+      \item \textbf{GitOps \& Microservices Infrastructure}: Deployed 50+ production microservices using ArgoCD GitOps, Helm, RBAC, HPA, and NetworkPolicies, establishing Blue-Green deployment strategies for zero-downtime releases.
+      \item \textbf{Stateful Distributed Systems}: Designed and operated highly available Hazelcast CP clusters on Kubernetes using StatefulSets, ensuring strong consistency, resilience, and fault tolerance for stateful applications.
+    \sectionItemEnd{}
+  \resumeHeadingListEnd{}
+
+%-----------FEATURED PLATFORM PROJECTS-------------------------
+\section{Projects}
+  \sectionItemBegin{}
+    \item \textbf{Multi-Tenant Internal Developer Platform (PaaS)}: Engineered a 2-layer EKS v1.35 PaaS separating OpenTofu core infrastructure from ArgoCD GitOps, Crossplane XRD compositions, vCluster tenant isolation, and Keycloak authentication.
+    \item \textbf{Autonomous SRE Alert Remediation Agent}: Built a multi-agent incident remediation platform using AWS Bedrock (Claude 3.5 Haiku), DynamoDB, and 8 Model Context Protocol (MCP) servers with human approval.
+    \item \textbf{Platform Observability Stack \& SLO Engine}: Architected a Kubernetes telemetry stack covering 4 golden signals using Prometheus, Loki, Grafana, OpenTelemetry, and 38 custom AWS/K8s alert rules.
+    \item \textbf{RAG Knowledge Assistant for Engineering Runbooks}: Implemented an async ingestion pipeline (S3, Lambda, EventBridge) with AWS Bedrock Knowledge Base, OpenSearch Serverless hybrid search (k-NN + BM25), and Kong API Gateway.
+  \sectionItemEnd{}
+
+%-----------EDUCATION-------------------------
+\section{Education}
+\resumeHeadingListStart{}
+  \resumeQuadHeading{Master of Technology (M.Tech), Computer Science \& Engineering}{Jul 2019 -- Jul 2021}{Indian Institute of Technology Madras (IIT Madras)}{Chennai, India}
+  \resumeQuadHeading{Bachelor of Technology (B.Tech), Computer Science \& Engineering}{Sep 2014 -- Jul 2017}{Loknayak Jai Prakash Institute of Technology}{Chapra, India}
+\resumeHeadingListEnd{}
+
+%----------------CERTIFICATIONS----------------------
+\section{Certifications}
+  \sectionItemBegin{}
+    \item Certified Kubernetes Administrator (CKA, CNCF)
+    \item Certified Kubernetes Application Developer (CKAD, CNCF)
+    \item HashiCorp Certified: Terraform Associate
+    \item AWS Certified AI Practitioner
+    \item AWS Certified Cloud Practitioner
+  \sectionItemEnd{}
+
+%-----------AWARDS-----------
+\section{Awards}
+  \sectionItemBegin{}
+    \item AWS GameDay Cloud Architecture Competition -- 2nd Runner-up (Jul 2023)
+    \item ST Cadre Star Performer Award (2023)
+    \item HCL Distinguished Contributor Award (2023)
+  \sectionItemEnd{}
+
+\end{document}
